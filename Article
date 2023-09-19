@@ -1,0 +1,64 @@
+La vedette du martyrologe
+
+La lecture régulière du martyrologe a fait naître en moi une question plutôt singulière : « Le nom le plus cité de tout ce livre ne serait-il pas celui d'un ennemi de l'Église ? » Aucun nom, en effet, ne me paraissait revenir plus souvent que celui de Dioclétien, célèbre empereur romain, fondateur de la Tétrarchie au début du quatrième siècle, qui mena la plus terrible persécution de l'Antiquité.
+Quelle ironie si la chose était avérée ! Il fallait vérifier. Ni une ni deux, j'ai écrit un petit script dans le but de compter le nombre d'occurences de chaque nom et regardé les résultats.
+Sans rentrer dans les détails techniques (qu'on pourra trouver en fin d'article), il faut donner quelques précisions de cet ordre pour justifier certains choix. Le fichier que j'ai utilisé est français ; pourquoi ne pas m'être servi du latin ? Tout bonnement parce qu'il m'eût fallu écrire un script plus compliqué où ilm'aurait fallu tenir compte des différents cas pour obtenir un résultat cohérent. Ainsi, pour un mot comme Dieu, il eût fallu rentrer une seule entrée pour Deus, Deum, Dei, Deo. D'autre part, le fichier employé n'est pas parfait : il y a de nombreuses coquilles que je n'ai pas encore eu le courage de corriger. Enfin, je me suis appuyé uniquement sur les mots commençant par une majuscule.
+Les résultats ne sont pas parfaits, mais donnent un ordre de grandeur.
+On remarquera que le nom de Rome est le premier, ce qui ne surprend guère, compte tenu du fait qu'il s'agit du martyrologe romain (et non du hiéronymien, par exemple). On trouve avec soulagement le Christ en deuxième position : additionné aux mots Dieu, Seigneur et Jésus, qu'on trouve peu après, on peut donc considérer que c'est aussi le personnage le plus important (ce qu'il serait de toute façon, puisque les saints sont agis par lui). En troisième position, on trouve Dioclétien, avec environ 200 occurences. Plus loin, on trouve d'autres persécuteurs, notamment Maximien, collègue de Dioclétien, en 9ème position, et donc le deuxième personnage purement humain du classement ; Dèce, grand persécuteur bien qu'il régnât peu ; Valérien ; Antonin (mais d'autres personnages qu'Antonin dit mal à propos le pieux sont désignés par ce nom) ; Julien l'apostat (en réalité présent seulement 35 fois : les autres occurences de ce nom désignent d'autres personnes)...
+J'ai eu la surprise de constater que le pays le plus cité est la France, avec environ 300 mentions (en additionnant Gaule et France dans la version française), suivie de l'Espagne avec moitié moins d'occurences, et de l'Afrique (mais dans le sens restreint qui lui était donné dans l'Antiquité, à savoir l'actuelle Tunisie) ; je subodore cependant que l'Italie passe devant si on additionne toutes les entrées correspondant aux diverses villes et régions (Milan, Naples, Latium, Campanie, etc.)
+Voici en tous cas les 50 premiers résultats.
+y
+1: Rome - 413
+2: Christ - 377
+3: Dioclétien - 202
+4: Seigneur - 188
+5: Dieu - 167
+6: Gaule - 159
+7: France - 147
+8: Espagne - 136
+9: Maximien - 121
+10: Marie - 118
+11: Pierre - 116
+12: Jean - 107
+13: Afrique - 106
+14: Grégoire - 102
+15: Pie - 97
+16: Paul - 95
+17: Alexandrie - 94
+18: Julien - 81
+19: Félix - 79
+20: Constantinople - 79
+21: Alexandre - 78
+22: Dèce - 71
+23: Antioche - 67
+24: Palestine - 67
+25: Milan - 60
+26: Campanie - 60
+27: Valérien - 60
+28: Léon - 59
+29: Antonin - 55
+30: Angleterre - 54
+31: Jésus - 53
+32: Nicomédie - 51
+33: Maxime - 51
+34: Césarée - 50
+35: Toscane - 45
+36: Marc - 45
+37: Égypte - 44
+38: Augustin - 42
+39: Adrien - 42
+40: Jérusalem - 40
+41: Victor - 40
+42: Benoît - 39
+43: Cappadoce - 38
+44: Lyon - 36
+45: Cordoue - 34
+46: Perse - 34
+47: Lucius - 33
+48: Naples - 32
+49: Syrie - 32
+50: Sicile - 32
+
+Détails techniques
+L'ensemble des fichiers (script et données) se trouvent dans ce dépôt et peuvent être utilisés avec Python 3.
+Voici les résultats complets, pour ceux qui seraient intéressés, avec de nombreux faux que je n'ai pas eu le temps de corriger (il y a presque 4000 entrées, tout de même...)
